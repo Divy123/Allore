@@ -10,7 +10,9 @@ class Nav extends Component {
             Allore
           </a>
           <div id="" className="nav-right">
-            <Link className="waves-effect btn-flat nav-item">Home</Link>
+            <Link to="/" className="waves-effect btn-flat nav-item">
+              Home
+            </Link>
             <Link className="waves-effect btn-flat nav-item" to="/login">
               Sign in
             </Link>
