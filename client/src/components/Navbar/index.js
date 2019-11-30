@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Nav.css";
-
+import { Link } from "react-router-dom";
 class Nav extends Component {
   render() {
     return (
@@ -10,15 +10,11 @@ class Nav extends Component {
             Allore
           </a>
           <div id="" className="nav-right">
-            <a className="waves-effect btn-flat nav-item">
-              Home
-            </a>
-            <a className="waves-effect btn-flat nav-item">
+            <Link className="waves-effect btn-flat nav-item">Home</Link>
+            <Link className="waves-effect btn-flat nav-item" to="/login">
               Sign in
-            </a>
-            <a className="waves-effect btn-flat nav-item">
-              Contact Us
-            </a>
+            </Link>
+            <Link className="waves-effect btn-flat nav-item">Contact Us</Link>
           </div>
         </div>
       </nav>

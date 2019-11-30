@@ -6,7 +6,12 @@ class About extends Component {
   render() {
     return (
       <div className="about-allore">
-        <img height="300px" src={aboutSVG} alt="Connecting SVG" />
+        <img
+          height="300px"
+          src={aboutSVG}
+          alt="Connecting SVG"
+          className="hide-on-med-and-down"
+        />
         <div className="about-allore-text">
           <h1>Allore</h1>
           <p>
@@ -29,6 +34,12 @@ class About extends Component {
             adipisicing quis pariatur magna commodo sunt nisi amet ipsum id
             fugiat dolor.
           </p>
+          <a
+            class="btn waves-effect grey darken-2 white-text darken-text-4 register-btn-about-section"
+            href="#!"
+          >
+            Register Now!
+          </a>
         </div>
       </div>
     );

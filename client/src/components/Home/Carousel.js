@@ -10,9 +10,8 @@ class Carousel extends Component {
             <div class="container">
               <h1 class="white-text">Allore</h1>
               <a
-                class="btn waves-effect white grey-text darken-text-2"
-                href="https://codepen.io/collection/nbBqgY/"
-                target="_blank"
+                class="btn waves-effect grey darken-2 white-text darken-text-4"
+                href="#!"
               >
                 Register Now!
               </a>

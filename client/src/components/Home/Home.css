@@ -9,10 +9,28 @@
   width: 40%;
 }
 
+.main-layout-wrapper {
+  padding: 10px 10% 0px 10%;
+}
+
 body {
   background: url("https://raw.githubusercontent.com/blurry-x-face/Allore/RS/src/assets/wave.png")
     0px -10% no-repeat;
   background-size: cover;
   background-position: fixed;
   background-attachment: fixed;
+}
+
+.register-btn-about-section {
+  float: right !important;
+}
+
+@media only screen and (max-width: 750px) {
+  .about-allore-text {
+    width: 90%;
+  }
+  .main-layout-wrapper {
+    padding: 15px;
+    padding-bottom: 0px;
+  }
 }

@@ -43,7 +43,13 @@ class NewsCards extends Component {
                 <div className="news-date">
                   {v.month} <span>{v.day}</span>
                 </div>
-                <div className="news-item-content">{v.detail}</div>
+                <a
+                  href="#!"
+                  className="news-item-content"
+                  style={{ color: "rgb(54, 54, 54)" }}
+                >
+                  {v.detail}
+                </a>
               </div>
             ))}
           </div>
@@ -52,7 +58,11 @@ class NewsCards extends Component {
           </div>
         </div>
 
-        <img src={LatestNewsSVG} alt="News SVG" className="news-card-svg" />
+        <img
+          src={LatestNewsSVG}
+          alt="News SVG"
+          className="news-card-svg hide-on-med-and-down"
+        />
       </div>
     );
   }
