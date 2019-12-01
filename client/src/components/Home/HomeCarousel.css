@@ -1,13 +1,20 @@
 .carousel-section {
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 .carousel-section .carousel {
-  height: 600px !important;
+  height: 400px !important;
 }
 
 #carousel-item-1 {
   background: url("https://scontent.fdel1-3.fna.fbcdn.net/v/t1.0-9/46482662_1884444214984314_2992938296541184000_o.jpg?_nc_cat=106&_nc_ohc=E6aCRTI2GOQAQnLOvHIGgw4sQ4UEZPv_9tHzHnDCxaBSx2UElLoxB0T7w&_nc_ht=scontent.fdel1-3.fna&oh=06ff2c3477ca40d97605df13867ee8dc&oe=5E85E5E7")
     no-repeat center;
   background-size: cover;
+}
+
+.home-carousel-item-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 50px;
 }

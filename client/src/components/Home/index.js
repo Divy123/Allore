@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MainLayout from "../Layouts/MainLayout";
-import Carousel from "./Carousel";
+import HomeCarousel from "./HomeCarousel";
 import About from "./About";
 import HomeCards from "./HomeCards";
 
@@ -8,7 +8,7 @@ class Home extends Component {
   render() {
     return (
       <MainLayout>
-        <Carousel />
+        <HomeCarousel />
         <About />
         <HomeCards />
       </MainLayout>
