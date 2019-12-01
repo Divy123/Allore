@@ -23,7 +23,7 @@ class App extends React.Component {
           <Route path="/login" component={Login} />
           <Route path="/register/next" component={RegisterNext} />
           <Route path="/register" component={Register} />
-          <Route path="/batch:year" component={Batch} />
+          <Route path="/batch/:year" component={Batch} />
           <Route path="/" component={Home} />
         </Switch>
       </>
