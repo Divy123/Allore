@@ -11,6 +11,7 @@ import UserDashboard from "./components/UserDashboard/UserDashboard";
 import Register from "./components/Register";
 import RegisterNext from "./components/Register/RegisterNext";
 import AlumnusProfile from "./components/UserDashboard/AlumnusProfile";
+import Batch from "./components/Batch";
 
 class App extends React.Component {
   render() {
@@ -22,6 +23,7 @@ class App extends React.Component {
           <Route path="/login" component={Login} />
           <Route path="/register/next" component={RegisterNext} />
           <Route path="/register" component={Register} />
+          <Route path="/batch:year" component={Batch} />
           <Route path="/" component={Home} />
         </Switch>
       </>
