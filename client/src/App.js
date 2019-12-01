@@ -12,12 +12,14 @@ import Register from "./components/Register";
 import RegisterNext from "./components/Register/RegisterNext";
 import AlumnusProfile from "./components/UserDashboard/AlumnusProfile";
 import Batch from "./components/Batch";
+import Search from "./components/UserDashboard/Search";
 
 class App extends React.Component {
   render() {
     return (
       <>
         <Switch>
+          <Route path="/search" component={Search} />
           <Route path="/profile/:enrollNo" component={AlumnusProfile} />
           <Route path="/dashboard" component={UserDashboard} />
           <Route path="/login" component={Login} />

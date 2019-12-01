@@ -37,20 +37,20 @@ class Sidenav extends Component {
           </li>
           <li>
             <Link to="/dashboard" className="sidenav-close">
-            <i class="fas fa-user"></i>Dashboard
+              <i class="fas fa-user"></i>Dashboard
             </Link>
             <Link to="/edit-profile" className="sidenav-close">
-            <i class="fas fa-pencil-alt"></i>Edit Profile
+              <i class="fas fa-pencil-alt"></i>Edit Profile
             </Link>
           </li>
           <li>
-            <Link to="/batch/2k17">
-            <i class="fas fa-search"></i>Search
+            <Link to="/search" className="sidenav-close">
+              <i class="fas fa-search"></i>Search
             </Link>
           </li>
           <li>
             <a href="#!">
-            <i class="fas fa-users"></i>Batch 2k16
+              <i class="fas fa-users"></i>Batch 2k16
             </a>
           </li>
 
@@ -62,7 +62,7 @@ class Sidenav extends Component {
           </li>
           <li>
             <a href="#!">
-            <i class="fas fa-power-off"></i>Logout
+              <i class="fas fa-power-off"></i>Logout
             </a>
           </li>
         </ul>
