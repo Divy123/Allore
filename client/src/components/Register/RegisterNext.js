@@ -3,7 +3,6 @@ import LoginImage from "../../assets/img/misc/mobile.svg";
 import "../Login/Login.css";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Nav from "../Navbar";
-import UserAvatar from "react-user-avatar";
 
 class RegisterNext extends Component {
   state = {
