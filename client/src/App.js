@@ -9,6 +9,8 @@ import "materialize-css/dist/css/materialize.min.css";
 
 import "./App.css";
 import UserDashboard from "./components/UserDashboard/UserDashboard";
+import Register from "./components/Register";
+import RegisterNext from "./components/Register/RegisterNext";
 
 class App extends React.Component {
   render() {
@@ -19,6 +21,8 @@ class App extends React.Component {
             <UserDashboard />
           </Route>
           <Route path="/login" component={Login} />
+          <Route path="/register/next" component={RegisterNext} />
+          <Route path="/register" component={Register} />
           <Route path="/" component={Home} />
         </Switch>
       </>
