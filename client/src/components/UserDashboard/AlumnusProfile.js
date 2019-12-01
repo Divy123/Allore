@@ -13,7 +13,7 @@ class AlumnusProfile extends Component {
         <div className="container">
           <div className="row">
             <div className="col l6 m6 s12 valign-wrapper right">
-              <img src={ProfilePicSvg} className="alumnus-profile-pic" />
+              <img src={ProfilePicSvg} className="alumnus-profile-pic" alt="profile pic" />
             </div>
             <div className="col l6 m6 s12">
               <h2 className="center-align">

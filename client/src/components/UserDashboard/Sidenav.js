@@ -14,7 +14,7 @@ class Sidenav extends Component {
   render() {
     return (
       <>
-        <a href="#" data-target="slide-out" className="sidenav-trigger">
+        <a href="#!" data-target="slide-out" className="sidenav-trigger">
           <div className="hamburger-icon">
             <div></div>
           </div>
@@ -24,13 +24,13 @@ class Sidenav extends Component {
           <li>
             <div className="user-view">
               <div className="background whitesmoke-bg"></div>
-              <a href="#user">
-                <img className="circle" src={ProfilePicSvg} />
+              <a href="#!">
+                <img className="circle" src={ProfilePicSvg} alt="profile pic"/>
               </a>
-              <a href="#name">
+              <a href="#!">
                 <span className="black-text name">John Doe</span>
               </a>
-              <a href="#email">
+              <a href="#!">
                 <span className="black-text email">jdandturk@gmail.com</span>
               </a>
             </div>
@@ -58,7 +58,7 @@ class Sidenav extends Component {
             <div className="divider"></div>
           </li>
           <li>
-            <a className="subheader">More</a>
+            <a href="#!" className="subheader">More</a>
           </li>
           <li>
             <a href="#!">

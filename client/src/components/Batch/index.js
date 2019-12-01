@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import Nav from "../Navbar";
 import "./Batch.css";
-import profilePic from "../../assets/img/misc/profile_pic_svg.svg";
 import "../Login/Login.css";
 import Sidenav from "../UserDashboard/Sidenav";
 
@@ -74,6 +72,7 @@ class Batch extends Component {
             <div class="card sticky-action" style={{ overflow: "visible" }}>
               <div class="card-image waves-effect waves-block waves-light">
                 <img
+                alt=""
                   class="activator"
                   src={
                     v.imageURI === ""

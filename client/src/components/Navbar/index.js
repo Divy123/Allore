@@ -6,7 +6,7 @@ class Nav extends Component {
     return (
       <nav>
         <div className="nav-outer">
-          <a href="#" className="allore-logo">
+          <a href="#!" className="allore-logo">
             Allore
           </a>
           <div id="" className="nav-right">
@@ -16,7 +16,7 @@ class Nav extends Component {
             <Link className="waves-effect btn-flat nav-item" to="/login">
               Sign in
             </Link>
-            <Link className="waves-effect btn-flat nav-item">Contact Us</Link>
+            <Link to="#!" className="waves-effect btn-flat nav-item">Contact Us</Link>
           </div>
         </div>
       </nav>

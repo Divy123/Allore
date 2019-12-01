@@ -6,7 +6,6 @@ import Login from "./components/Login/index";
 import { Switch, Route } from "react-router-dom";
 import "materialize-css/dist/css/materialize.min.css";
 
-import "./App.css";
 import UserDashboard from "./components/UserDashboard/UserDashboard";
 import Register from "./components/Register";
 import RegisterNext from "./components/Register/RegisterNext";

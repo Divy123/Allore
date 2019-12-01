@@ -35,7 +35,7 @@ class About extends Component {
             fugiat dolor.
           </p>
           <a
-            class="btn waves-effect grey darken-2 white-text darken-text-4 register-btn-about-section"
+            className="btn waves-effect grey darken-2 white-text darken-text-4 register-btn-about-section"
             href="#!"
           >
             Register Now!

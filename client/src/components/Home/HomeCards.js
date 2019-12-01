@@ -54,7 +54,7 @@ class NewsCards extends Component {
             ))}
           </div>
           <div style={{ textAlign: "end", marginTop: 28 }}>
-            <a href="#">Read More...</a>
+            <a href="#!">Read More...</a>
           </div>
         </div>
 

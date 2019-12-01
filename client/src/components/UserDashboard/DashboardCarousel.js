@@ -23,13 +23,13 @@ function dashboardCarousel() {
             <Emoji text="Edit Your Profile ✏️" />
             <p className="black-text left-align">
               Do you think, your profile needs a revamp? Ah, leave it on us. We
-              will do it for you <a href="#">here</a>.
+              will do it for you <a href="#!">here</a>.
             </p>
           </h2>
         </div>
         <div className="col l6 dashboard-slider-svg">
           <h2 className="flow-text center-align">
-            <img src={PersonalInfoSvg} style={{ width: "300px" }} />
+            <img src={PersonalInfoSvg} style={{ width: "300px" }} alt="edit personal info"/>
           </h2>
         </div>
       </div>
@@ -40,13 +40,13 @@ function dashboardCarousel() {
             <Emoji text="Quench your thirst 🧐" />
             <p className="black-text left-align">
               Wanna lookup for your colleagues filtering by batch, name, branch
-              or comapny? Let us serve you better <a href="#">here</a>.
+              or comapny? Let us serve you better <a href="#!">here</a>.
             </p>
           </h2>
         </div>
         <div className="col l6 dashboard-slider-svg">
           <h2 className="flow-text center-align">
-            <img src={SearchSvg} style={{ width: "300px" }} />
+            <img src={SearchSvg} style={{ width: "300px" }} alt="search your batch mates"/>
           </h2>
         </div>
       </div>
@@ -56,13 +56,13 @@ function dashboardCarousel() {
             <Emoji text="Not very far 🤝" />
             <p className="black-text left-align">
               Missing your peers!! They are never far when you are{" "}
-              <a href="#">here</a>.
+            <a href="#!">here</a>.
             </p>
           </h2>
         </div>
         <div className="col l6 dashboard-slider-svg">
           <h2 className="flow-text center-align">
-            <img src={FriendshipSvg} style={{ width: "300px" }} />
+            <img src={FriendshipSvg} style={{ width: "300px" }} alt="see your batch"/>
           </h2>
         </div>
       </div>
