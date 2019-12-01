@@ -1,4 +1,13 @@
 .max-height-110 {
-    max-height: 300px;
-    height: 300px
+    max-height: 350px;
+    height: 350px
+}
+
+@media (max-width: 900px) {
+    .dashboard-slider-svg {
+        display: none;
+    }
+    .dashboard-slider-text {
+        width: 100%!important;
+    }
 }

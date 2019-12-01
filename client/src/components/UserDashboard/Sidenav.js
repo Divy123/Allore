@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import M from "materialize-css";
 
 import "./Sidenav.css";
@@ -22,8 +23,7 @@ class Sidenav extends Component {
         <ul id="slide-out" className="sidenav">
           <li>
             <div className="user-view">
-              <div className="background whitesmoke-bg">
-              </div>
+              <div className="background whitesmoke-bg"></div>
               <a href="#user">
                 <img className="circle" src={ProfilePicSvg} />
               </a>
@@ -36,17 +36,20 @@ class Sidenav extends Component {
             </div>
           </li>
           <li>
-            <a href="#!">
+            <Link to="/dashboard" className="sidenav-close">
+              <i className="material-icons">person</i>Dashboard
+            </Link>
+            <Link to="/edit-profile" className="sidenav-close">
               <i className="material-icons">create</i>Edit Profile
-            </a>
+            </Link>
           </li>
           <li>
-          <a href="#!">
+            <a href="#!">
               <i className="material-icons">search</i>Search
             </a>
           </li>
           <li>
-          <a href="#!">
+            <a href="#!">
               <i className="material-icons">people</i>Batch 2k16
             </a>
           </li>
@@ -58,7 +61,7 @@ class Sidenav extends Component {
             <a className="subheader">More</a>
           </li>
           <li>
-          <a href="#!">
+            <a href="#!">
               <i className="material-icons">power_settings_new</i>Logout
             </a>
           </li>

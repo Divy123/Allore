@@ -1,0 +1,21 @@
+.alumnus-profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    margin: auto;;
+}
+
+.alumnus-social-icons i {
+    margin-left: 18px;
+}
+
+.twitter {
+    color: #1da1f2;
+}
+
+.github {
+    color: #333;
+}
+
+.linkedin {
+    color: #0077b5
+}
