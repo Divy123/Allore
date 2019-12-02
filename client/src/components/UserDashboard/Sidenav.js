@@ -25,7 +25,7 @@ class Sidenav extends Component {
             <div className="user-view">
               <div className="background whitesmoke-bg"></div>
               <a href="#!">
-                <img className="circle" src={ProfilePicSvg} alt="profile pic"/>
+                <img className="circle" src={ProfilePicSvg} alt="profile pic" />
               </a>
               <a href="#!">
                 <span className="black-text name">John Doe</span>
@@ -36,21 +36,28 @@ class Sidenav extends Component {
             </div>
           </li>
           <li>
-            <Link to="/dashboard" className="sidenav-close">
-              <i class="fas fa-user"></i>Dashboard
+            <Link to="/" className="sidenav-close">
+            <i className="fas fa-home"></i>Home
             </Link>
+          </li>
+          <li>
+            <Link to="/dashboard" className="sidenav-close">
+              <i className="fas fa-user"></i>Dashboard
+            </Link>
+          </li>
+          <li>
             <Link to="/edit-profile" className="sidenav-close">
-              <i class="fas fa-pencil-alt"></i>Edit Profile
+              <i className="fas fa-pencil-alt"></i>Edit Profile
             </Link>
           </li>
           <li>
             <Link to="/search" className="sidenav-close">
-              <i class="fas fa-search"></i>Search
+              <i className="fas fa-search"></i>Search
             </Link>
           </li>
           <li>
             <a href="#!">
-              <i class="fas fa-users"></i>Batch 2k16
+              <i className="fas fa-users"></i>Batch 2k16
             </a>
           </li>
 
@@ -58,11 +65,13 @@ class Sidenav extends Component {
             <div className="divider"></div>
           </li>
           <li>
-            <a href="#!" className="subheader">More</a>
+            <a href="#!" className="subheader">
+              More
+            </a>
           </li>
           <li>
             <a href="#!">
-              <i class="fas fa-power-off"></i>Logout
+              <i className="fas fa-power-off"></i>Logout
             </a>
           </li>
         </ul>

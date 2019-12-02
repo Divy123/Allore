@@ -12,11 +12,12 @@ import RegisterNext from "./components/Register/RegisterNext";
 import AlumnusProfile from "./components/UserDashboard/AlumnusProfile";
 import Batch from "./components/Batch";
 import Search from "./components/UserDashboard/Search";
+import AuthContextProvider from "./contexts/authContext";
 
 class App extends React.Component {
   render() {
     return (
-      <>
+      <AuthContextProvider>
         <Switch>
           <Route path="/search" component={Search} />
           <Route path="/profile/:enrollNo" component={AlumnusProfile} />
@@ -27,7 +28,7 @@ class App extends React.Component {
           <Route path="/batch/:year" component={Batch} />
           <Route path="/" component={Home} />
         </Switch>
-      </>
+      </AuthContextProvider>
     );
   }
 }
