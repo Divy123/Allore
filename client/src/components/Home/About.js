@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import aboutSVG from "../../assets/img/misc/undraw_social_sharing_ibwq.svg";
 
@@ -34,12 +35,13 @@ class About extends Component {
             adipisicing quis pariatur magna commodo sunt nisi amet ipsum id
             fugiat dolor.
           </p>
-          <a
+          <Link
+            to="/register"
             className="btn waves-effect grey darken-2 white-text darken-text-4 register-btn-about-section"
             href="#!"
           >
             Register Now!
-          </a>
+          </Link>
         </div>
       </div>
     );

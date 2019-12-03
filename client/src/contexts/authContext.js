@@ -6,7 +6,11 @@ const initialState = {
   isAuthenticated: false,
   name: null,
   email: null,
-  token: null
+  token: null,
+  error: false,
+  errorMsg: null,
+  year: null,
+  profile_pic: null,
 };
 
 const AuthContextProvider = props => {

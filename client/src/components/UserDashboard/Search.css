@@ -1,0 +1,10 @@
+.search-results-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-results-wrapper span {
+    margin: 10px 20px;
+}

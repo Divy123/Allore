@@ -3,3 +3,19 @@
   a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
   color: #07742d;
 }
+
+.batch-alumnus-wrapper span {
+  margin: 10px 20px;
+}
+
+.batch-alumnus-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.batch-alumnus-profile-pic {
+  width: 100px;
+  border-radius: 50%;
+}

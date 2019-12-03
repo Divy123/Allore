@@ -31,5 +31,8 @@ nav .allore-logo {
 
 nav .nav-item {
   color: rgba(0, 0, 0, 0.6);
-  margin-left: 20px;
+}
+
+nav .nav-item:hover {
+  background: rgba(80, 85, 80, 0.349);
 }
