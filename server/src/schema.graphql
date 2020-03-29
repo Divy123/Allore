@@ -1,0 +1,129 @@
+type Query {
+  users(year: Int,college_email:String, name:String): [User!]!
+  posts: [Post!]!
+  events: [Event!]!
+}
+
+type Mutation {
+  createUser(data: inputUserData!): AuthPayload!
+  loginUser(data: loginUserData!): AuthPayload!
+  updateUser(id: ID, data: updateUserData!): User
+  forgotPassword(email: String!): String!
+  changePassword(data: changePasswordData!): User!
+  createAdmin(data: inputUserData!): AuthPayload!
+  createPost(data: inputPostData!): Post!
+  updatePost(id: ID!, data: updatePostData!): Post!
+  deletePost(id: ID!): Post!
+  createEvent(data: inputEventData!): Event!
+  updateEvent(id: ID!, data: updateEventData!): Event!
+  deleteEvent(id: ID!): Event!
+}
+
+type Post {
+  id: ID!
+  title: String!
+  body: String!
+  isFeatured: Boolean!
+  createdAt: String!
+}
+
+type Event {
+  id: ID!
+  title: String!
+  body: String
+  date: String!
+}
+
+type User {
+  name: String!
+  email: String!
+  college_email: String!
+  id: ID!
+  year: Int!
+  company: String!
+  profile_pic: String
+  resetPasswordToken:String
+  resetPasswordExpires:String
+  fb_link: String
+  linkedIn_link: String
+  github_link: String
+  twitter_link: String
+}
+
+type AuthPayload {
+  user: User!
+  token: String!
+  typeUser: Role!
+}
+
+type File {
+    id: ID!
+    path: String!
+    filename: String!
+    mimetype: String!
+    encoding: String!
+  }
+
+enum Role {
+  ADMIN
+  ALUMNI
+}
+
+input inputUserData {
+  name: String!
+  email: String!
+  password: String!
+  company: String!
+  college_email: String!
+  profile_pic: Upload
+  fb_link: String
+  linkedIn_link: String
+  github_link: String
+  twitter_link: String
+}
+
+input inputEventData{
+  title: String!
+  body: String
+  date: String!
+}
+
+input updateEventData{
+  title: String!
+  body: String
+  date: String!
+}
+
+input changePasswordData{
+  token:String!
+  password:String!
+}
+
+input inputPostData {
+  title: String!
+  body: String!
+  isFeatured: Boolean!
+}
+
+input loginUserData {
+  email: String!
+  password: String!
+}
+
+input updateUserData {
+  email: String
+  company: String
+  profile_pic: Upload
+  fb_link: String
+  linkedIn_link: String
+  github_link: String
+  twitter_link: String
+}
+
+input updatePostData {
+  title: String
+  body: String
+  isFeatured: Boolean
+}
+
+scalar Upload

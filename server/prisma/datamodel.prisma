@@ -1,0 +1,39 @@
+type User{
+    name: String!
+    email:String! @unique
+    college_email:String @unique
+    password:String!
+    id: ID! @id
+    company: String!
+    profile_pic: String
+    fb_link: String
+    linkedIn_link: String
+    github_link: String
+    twitter_link: String
+    role: Role! @default(value: ALUMNI)
+    resetPasswordToken:String @unique
+    resetPasswordExpires:String 
+    year: Int!
+    
+}
+
+enum Role {
+  ADMIN
+  ALUMNI
+}
+
+type Post{
+    id: ID! @id
+    title:String!
+    body:String!
+    isFeatured:Boolean!
+    createdAt: DateTime! @createdAt @required
+}
+
+type Event{
+  id: ID! @id
+  title: String!
+  body: String
+  date: String!
+}
+
